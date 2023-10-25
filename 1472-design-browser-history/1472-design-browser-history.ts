@@ -1,3 +1,5 @@
+// 11 min
+
 class NodeBrowser {
   value: string;
   next: NodeBrowser | null;
@@ -11,12 +13,12 @@ class NodeBrowser {
 }
 
 class BrowserHistory {
-  origin: NodeBrowser;
+  // origin: NodeBrowser;
   head: NodeBrowser;
 
   constructor(homepage: string) {
-    this.origin = new NodeBrowser(homepage, null, null);
-    this.head = this.origin;
+    // this.origin = new NodeBrowser(homepage, null, null);
+    this.head = new NodeBrowser(homepage, null, null);
   }
 
   visit(url: string): void {
